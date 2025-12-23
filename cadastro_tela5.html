@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+  <title>Cadastro Jiu-Jitsu</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>🥋 Histórico do Aluno</h2>
+
+    <form action="" method="post" class="form-container">
+
+      <!-- Já treinou antes -->
+      <label for="treino_aluno">Já treinou Jiu-Jitsu antes?</label>
+      <select id="treino_aluno" name="treino_aluno" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <!-- Academias anteriores -->
+      <label for="academias">Academias anteriores (se sim, qual?)</label>
+      <input type="text" id="academias" name="academias" placeholder="Ex: Gracie Barra, Alliance...">
+
+      <!-- Faixa atual -->
+      <label for="faixa">Faixa atual</label>
+      <select id="faixa" name="faixa" required>
+        <option value="">Selecione</option>
+
+        <!-- Infantil -->
+        <optgroup label="Infantil">
+          <option value="branca_inf">Branca</option>
+          <option value="cinza_branca">Cinza / Branca</option>
+          <option value="cinza">Cinza</option>
+          <option value="cinza_preta">Cinza / Preta</option>
+          <option value="amarela_branca">Amarela / Branca</option>
+          <option value="amarela">Amarela</option>
+          <option value="amarela_preta">Amarela / Preta</option>
+          <option value="laranja_branca">Laranja / Branca</option>
+          <option value="laranja">Laranja</option>
+          <option value="laranja_preta">Laranja / Preta</option>
+          <option value="verde_branca">Verde / Branca</option>
+          <option value="verde">Verde</option>
+          <option value="verde_preta">Verde / Preta</option>
+        </optgroup>
+
+        <!-- Adulto -->
+        <optgroup label="Adulto">
+          <option value="branca_adulto">Branca</option>
+          <option value="azul">Azul</option>
+          <option value="roxa">Roxa</option>
+          <option value="marrom">Marrom</option>
+          <option value="preta">Preta</option>
+          <option value="preta_vermelha">Preta / Vermelha</option>
+          <option value="vermelha_branca">Preta / Branca</option>
+          <option value="vermelha">Vermelha</option>
+
+        </optgroup>
+      </select>
+
+      <!-- Graus -->
+      <label for="graus">Graus</label>
+      <select id="graus" name="graus">
+        <!-- Graus comuns -->
+        <optgroup label="Graus comuns">
+          <option value="0">0 Grau</option>
+          <option value="1">1 Grau</option>
+          <option value="2">2 Graus</option>
+          <option value="3">3 Graus</option>
+          <option value="4">4 Graus</option>
+        </optgroup>
+
+        <!-- Faixa Preta -->
+        <optgroup label="Faixa Preta +">
+          <option value="1_dan">1º DAN</option>
+          <option value="2_dan">2º DAN</option>
+          <option value="3_dan">3º DAN</option>
+          <option value="4_dan">4º DAN</option>
+          <option value="5_dan">5º DAN</option>
+          <option value="6_dan">6º DAN</option>
+          <option value="7_dan">7º DAN</option>
+          <option value="8_dan">8º DAN</option>
+          <option value="9_dan">9º DAN</option>
+          <option value="10_dan">10º DAN</option>
+        </optgroup>
+      </select>
+
+      <!-- Data de início -->
+      <label for="data_inicio">Data de início no Jiu-Jitsu</label>
+      <input type="date" id="data_inicio" name="data_inicio">
+
+      <!-- Objetivo principal -->
+      <label for="objetivo">Objetivo principal</label>
+      <select id="objetivo" name="objetivo" required>
+        <option value="">Selecione</option>
+        <option>Saúde / Condicionamento</option>
+        <option>Defesa pessoal</option>
+        <option>Competição</option>
+        <option>Qualidade de vida</option>
+      </select>
+
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="provisorio-links">
+    <a href="cadastro_tela4.html">◀️</a>
+    <a href="app_index.html">▶️</a>
+  </div>
+
+</body>
+
+</html>

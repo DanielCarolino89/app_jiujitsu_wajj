@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+  <title>Cadastro Jiu-Jitsu</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>✅ Cadastro do Aluno</h1>
+
+    <form action="" method="post" class="form-container">
+
+      <label class="foto-box">
+
+        <!-- FOTO PROVISÓRIA -->
+        <img src="/assets/IMG/placeholder.jpg" id="preview" alt="Foto do aluno">
+
+        <!-- INPUT INVISÍVEL -->
+        <input type="file" id="foto_aluno" name="foto_aluno" accept="image/*" capture="environment"
+          onchange="previewFoto(event)" required>
+
+      </label>
+
+      <label for="cpf_aluno">CPF</label>
+      <input type="tel" id="cpf_aluno" name="cpf_aluno" placeholder="Somente números" maxlength="11" pattern="[0-9]{11}"
+        inputmode="numeric" autocomplete="off" required>
+
+      <label for="nome_aluno">Nome completo</label>
+      <input type="text" id="nome_aluno" name="nome_aluno" placeholder="Nome completo" autocomplete="name" required>
+
+      <label for="nascimento_aluno">Data de nascimento</label>
+      <input type="date" id="nascimento_aluno" name="nascimento_aluno" required>
+
+      <label for="tel_aluno">Telefone</label>
+      <input type="tel" id="tel_aluno" name="tel_aluno" placeholder="(99) 99999-9999" inputmode="tel" autocomplete="tel"
+        required>
+
+      <label for="endereco_aluno">Endereço completo</label>
+      <input type="text" id="endereco_aluno" name="endereco_aluno" placeholder="Rua, número, bairro, cidade"
+        autocomplete="street-address" required>
+
+      <label for="email_aluno">Email</label>
+      <input type="email" id="email_aluno" name="email_aluno" placeholder="email@exemplo.com" autocomplete="email">
+
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <script src="/assets/JS/scripts.js"></script>
+  
+  <!-- LINKS PROVISÓRIOS -->
+  <div class="provisorio-links">
+    <a href="index.html">◀️</a>
+    <a href="cadastro_tela2.html">▶️</a>
+  </div>
+
+</body>
+
+
+</html>

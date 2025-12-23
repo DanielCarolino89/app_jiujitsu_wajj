@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+  <title>Cadastro Jiu-Jitsu</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>🩺 Check-in de Saúde</h2>
+
+    <form action="" method="post" class="form-container">
+
+      <!-- Problemas de saúde -->
+      <label for="saude_aluno">
+        Tem algum problema cardíaco ou de saúde que restrinja exercícios físicos?
+      </label>
+      <input type="text" id="saude_aluno" name="saude_aluno" placeholder="Se sim, qual?">
+
+      <!-- Lesoes -->
+      <label for="lesao_aluno">
+        Tem alguma lesão prévia ou dor crônica?
+      </label>
+      <input type="text" id="lesao_aluno" name="lesao_aluno" placeholder="Ex: joelho, ombro, coluna...">
+
+      <!-- Medicações -->
+      <label for="medicacao_aluno">
+        Faz uso contínuo de algum medicamento?
+      </label>
+      <input type="text" id="medicacao_aluno" name="medicacao_aluno" placeholder="Se sim, qual?">
+
+      <!-- Cirurgias -->
+      <label for="cirurgia_aluno">
+        Já realizou alguma cirurgia recentemente?
+      </label>
+      <input type="text" id="cirurgia_aluno" name="cirurgia_aluno" placeholder="Informe qual e quando">
+
+      <!-- Problemas cardiacos -->
+      <label for="pressao_aluno">
+        Possui pressão alta, baixa ou problemas circulatórios?
+      </label>
+      <input type="text" id="pressao_aluno" name="pressao_aluno" placeholder="Se sim, especifique">
+
+      <label for="respiratorio_aluno">
+        Possui algum problema respiratório?
+      </label>
+      <input type="text" id="respiratorio_aluno" name="respiratorio_aluno" placeholder="Ex: asma, bronquite...">
+
+      <label for="convulsao_aluno">
+        Já teve desmaios, convulsões ou crises epilépticas?
+      </label>
+      <input type="text" id="convulsao_aluno" name="convulsao_aluno" placeholder="Se sim, descreva">
+
+      <label for="neurodiversidade_aluno">
+        Possui algum diagnóstico neurológico, do desenvolvimento ou condição que exija atenção especial durante o treino
+        (ex: TEA, TDAH, ansiedade)?
+      </label>
+      <input type="text" id="neurodiversidade_aluno" name="neurodiversidade_aluno"
+        placeholder="Se sim, descreva se necessita de acompanhamento ou adaptação">
+
+      <label for="outras_aluno">
+        Possui alguma outra condição de saúde que o professor deva saber?
+      </label>
+      <input type="text" id="outras_aluno" name="outras_aluno" placeholder="Opcional">
+
+      <label class="aviso-confidencial">
+        <b>Declaro que as informações são verdadeiras e estou apto para o treino.</b></label>
+
+      <select id="declaracao_aluno" name="declaracao_aluno" required>
+        <option value="">Selecione</option>
+        <option value="concordo">Concordo</option>
+        <option value="nao_concordo">Não concordo</option>
+      </select>
+
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- LINKS PROVISÓRIOS -->
+  <div class="provisorio-links">
+    <a href="cadastro_tela2.html">◀️</a>
+    <a href="cadastro_tela4.html">▶️</a>
+  </div>
+
+</body>
+
+</html>
